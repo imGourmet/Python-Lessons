@@ -1,0 +1,41 @@
+
+
+
+"Habilidad para presentar diferentes tipos de datos con la misma interfaz (SINTETIZAR)"
+
+Ejemplo:
+
+print("Hello World")
+print("200")
+print("200.23")
+
+--> diferentes tipos de datos con la misma función "print"
+
+Ejemplo más claro y avanzado:
+
+    Definir funciones que dibujen formas geométricas SIN polimorfismo y CON polimorfismo:
+
+    SIN polimorfismo:
+
+        shapes = [tr1, sq1, cr1]
+        for a_shape in shapes:
+            if type(a_shape) == 'Triangle':
+                a_shape.draw_triangle()
+            if type(a_shape) == 'Square' :
+                a_shape.draw_square()
+            if type(a_shape) == 'Circle' :
+                a_shape.draw_circle()
+
+    CON polimorfismo:
+
+        shapes = [tr1, sq1, cr1]
+        for a_shape in shapes:
+            a_shape.draw()
+
+La diferencia es clarísima: en el primer caso hemos definido un método para 
+dibujar cada figura, sin embargo en el segundo caso
+gracias a usar polimorfismo hemos definido un solo método para definir 
+la acción de dibujar, independientemente de su forma.
+
+
+        

@@ -1,0 +1,7 @@
+
+
+
+import alCubo
+
+alCubo.cubo()
+
